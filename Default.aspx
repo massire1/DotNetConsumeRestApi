@@ -19,9 +19,7 @@
                 success: function (data) {
 
                     $.each(data, function (key, value) {
-                        //stringify
                         var jsonData = JSON.stringify(value);
-                        //Parse JSON
                         var objData = $.parseJSON(jsonData);
                         var id = objData.codeHabitation;
                         var prop = objData.proprietaire;
